@@ -1,33 +1,64 @@
 package Empresa;
+import java.util.List;
 
-public abstract class Personas {
+public class Personas{
+	
+	private long numDocumento;
+	
+	private String nombre;
+	
+	private String apellido;
 
-    public String getNombre(String Name){
-
-        return null;
-    }
-
-    public int getIdentificacion(int id){
-        return 0;
-    }
-
-    public abstract void setCantidadDeID(int cantidad);
-
-    public abstract int getCantidadDeID();
-
-	public int setidentificacion(String id) {
-		// TODO Auto-generated method stub
-		return 0;
+	public Persona() {
+		super();
 	}
 
-	public int setidentificacion(int id) {
-		// TODO Auto-generated method stub
-		return 0;
+	public Persona(TipoDocumento miTipoDoc, long numDocumento,
+			String nombre, String apellido) {
+		super();
+		this.miTipoDoc = miTipoDoc;
+		this.numDocumento = numDocumento;
+		this.nombre = nombre;
+		this.apellido = apellido;
+	}
+	public TipoDocumento getMiTipoDoc() {
+		return miTipoDoc;
 	}
 
-	public int getidentificacion(int id) {
-		// TODO Auto-generated method stub
-		return 0;
+	public void setMiTipoDoc(TipoDocumento miTipoDoc) {
+		this.miTipoDoc = miTipoDoc;
 	}
 
+	public long getNumDocumento() {
+		return numDocumento;
+	}
+
+	public void setNumDocumento(long numDocumento) {
+		this.numDocumento = numDocumento;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	
+
+	@Override
+	public String toString() {
+		return "miTipoDoc=" + miTipoDoc.getNombre() + ", numDocumento=" + numDocumento + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+	}
+	
+	
+	
 }
