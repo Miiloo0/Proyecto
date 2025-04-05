@@ -13,21 +13,12 @@ public class Personas{
 		super();
 	}
 
-	public Persona(TipoDocumento miTipoDoc, long numDocumento,
+	public Persona( long numDocumento,
 			String nombre, String apellido) {
 		super();
-		this.miTipoDoc = miTipoDoc;
 		this.numDocumento = numDocumento;
 		this.nombre = nombre;
 		this.apellido = apellido;
-	}
-	public TipoDocumento getMiTipoDoc() {
-		return miTipoDoc;
-	}
-
-	public void setMiTipoDoc(TipoDocumento miTipoDoc) {
-		this.miTipoDoc = miTipoDoc;
-	}
 
 	public long getNumDocumento() {
 		return numDocumento;
@@ -56,7 +47,7 @@ public class Personas{
 
 	@Override
 	public String toString() {
-		return "miTipoDoc=" + miTipoDoc.getNombre() + ", numDocumento=" + numDocumento + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+		return ", numDocumento=" + numDocumento + ", nombre=" + nombre + ", apellido=" + apellido + "]";
 	}
 	
 	
