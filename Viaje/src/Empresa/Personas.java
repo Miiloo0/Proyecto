@@ -1,6 +1,5 @@
 package Empresa;
 
-import java.util.List;
 
 public class Personas {
 
