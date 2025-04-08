@@ -1,24 +1,25 @@
 package Empresa;
+
 import java.util.List;
 
-public class Personas{
-	
-	private long numDocumento;
-	
-	private String nombre;
-	
-	private String apellido;
+public class Personas {
 
-	public Persona() {
+	private long numDocumento;
+
+	private String nombre;
+
+	private String Apellido;
+
+	public Personas() {
 		super();
 	}
 
-	public Persona( long numDocumento,
-			String nombre, String apellido) {
+	public Personas(long numDocumento, String nombre, String apellido) {
 		super();
 		this.numDocumento = numDocumento;
 		this.nombre = nombre;
-		this.apellido = apellido;
+		this.Apellido = Apellido;
+	}
 
 	public long getNumDocumento() {
 		return numDocumento;
@@ -37,19 +38,17 @@ public class Personas{
 	}
 
 	public String getApellido() {
-		return apellido;
+		return Apellido;
 	}
 
 	public void setApellido(String apellido) {
-		this.apellido = apellido;
+		this.Apellido = apellido;
 	}
-	
 
 	@Override
 	public String toString() {
-		return ", numDocumento=" + numDocumento + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+		return ", numDocumento=" + numDocumento + ", nombre=" + nombre + ", apellido=" + Apellido + "]";
 	}
-	
-	
-	
+
 }
+
