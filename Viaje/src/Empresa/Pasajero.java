@@ -2,7 +2,7 @@ package Empresa;
 
 import java.util.List;
 
-public class Personas {
+public class Pasajero {
 
 	private long numDocumento;
 
