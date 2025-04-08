@@ -28,7 +28,8 @@ public class Conductor extends Personas {
 	}
 	
 	public void setLicenciaVal(boolean Licencia) {
-	
+                this.Licencia=Licencia;
+		
 	}
 
 	public long getNumDocumento() {
